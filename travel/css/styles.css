@@ -1,0 +1,200 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+/* basic styles */
+html{
+
+}
+
+body{
+  
+}
+
+.btn {
+    padding: 10px 30px;
+}
+
+/* Header */
+
+
+.header {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    height: 90px;
+    width: 1440px;
+    justify-content: space-between;
+    background-color: rgba(242, 120, 92, 0.7);
+}
+
+.header-title {
+    align-self: center;
+    padding: 34px 156px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38.88px;
+    color: rgba(255, 255, 255, 1);
+    
+}
+
+/* Navigation */
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    
+}
+
+.header-list {
+    display: flex;
+    
+}
+
+.header-el {
+    margin-right: 42px;
+}
+
+.header-link {
+    font-size: 16px;
+    font-weight: 500px;
+    line-height: 21.17px;
+    color : rgba(255, 255, 255, 1)
+}
+
+.header-btn-box{
+   align-self: center;
+   margin-right: 120px;
+   
+}
+
+.header-btn {
+    font-size: 16px;
+    line-height: 21.17px;
+    font-weight: 500;
+    padding: 10px 30px;
+    background-color: #0D606F;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Main */
+
+/* Preview */
+
+.section-preview {
+    z-index: 1;
+    padding-top: 250px;
+    margin : 0px;
+    position: relative;
+    top: -90px;
+    height: 765px;
+    width: 1440px;
+    background-image: url('/travel/images/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg');
+}
+
+.preview-heading {}
+
+.preview-paragraph {}
+
+.preview-form-container {}
+
+.preview-form {}
+
+.preview-input {}
+
+.preview-btn {}
+
+/* Steps */
+
+.section-steps {}
+
+.steps-heading {}
+
+.steps-container {}
+
+.steps-block {}
+
+.steps-icon {}
+
+.steps-icon-link {}
+
+.steps-text {}
+
+/* Destination */
+
+.section-destinations {}
+
+.destination-heading {}
+
+.destinations-box {}
+
+.destination-img {}
+
+.destination-icons {}
+
+.destination-btn {}
+
+/* Stories */
+
+.section-stories {}
+
+.stories-heading {}
+
+.stories-container {}
+
+.stories-block {}
+
+.stories-img {}
+
+.stories-description {}
+
+.stories-text {}
+
+.stories-btn {}
+
+/* Footer */
+
+.footer {}
+
+.footer-copyrights {}
+
+/* Footer list */
+
+.footer-list {}
+
+.footer-item {}
+
+.footer-link {}
