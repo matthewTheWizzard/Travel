@@ -48,6 +48,7 @@ body{
     font-weight: 500;
     background-color: #0D606F;
     border-radius: 10px;
+    color: rgba(255, 255, 255, 1);
 }
 
 /* Header */
@@ -106,7 +107,6 @@ body{
 .header-btn {
     font-size: 16px;
     line-height: 21.17px;
-    color: rgba(255, 255, 255, 1);
 }
 
 /* Main */
@@ -178,7 +178,7 @@ body{
 .preview-btn {
     padding: 13.5px 32.5px;
     font-size: 24px;
-    color: rgba(255, 255, 255, 1);
+    
     font-weight: 500;
     margin: 18px;
     width: 282px;
@@ -227,7 +227,11 @@ body{
 
 /* Destination */
 
-.section-destinations {}
+.section-destinations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .destination-heading {
     position: relative;
@@ -238,13 +242,53 @@ body{
     margin: 96px 0px 47px 0px;
 }
 
-.destinations-box {}
+.destinations-box {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    
+}
 
-.destination-img {}
+.destination-img { 
+   max-width: 800px;
+   max-height: 800px;
+   border-radius: 16px;
+   margin: 0 30px
+}
 
-.destination-icons {}
+.destination-icons-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
 
-.destination-btn {}
+.destination-icons{
+    margin-right: 10px;
+}
+
+.destination-btn {
+    margin-top: 40px;
+    width: 228px;
+    height: 59px;
+    align-self: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31.75px;
+}
+.destination-btn:before{
+    content: '';
+    background-image: url(/travel/images/icons/Vector.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 37px;
+    height: 22.5px;
+    display: inline-block;
+    right: 10px;
+    top: 3px;
+    
+
+}
 
 /* Stories */
 
