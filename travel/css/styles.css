@@ -163,7 +163,7 @@ body{
     width: 560px;
     background-color: transparent;
     margin: 32px 0px 41px 41px;
-    padding-left: 41px;
+    
     font-weight: 400;
     font-style: italic;
     font-size: 24px;
@@ -190,6 +190,7 @@ body{
 .section-steps {}
 
 .steps-heading {
+    width: 1440px;
     position: relative;
     text-align: center;
     color: rgba(242, 120, 92, 1);
@@ -228,6 +229,7 @@ body{
 /* Destination */
 
 .section-destinations {
+    width: 1440px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -292,32 +294,161 @@ body{
 
 /* Stories */
 
-.section-stories {}
+.section-stories { 
+    width: 1440px;
+}
 
-.stories-heading {}
+.stories-section-heading {
+    position: relative;
+    text-align: center;
+    color: rgba(242, 120, 92, 1);
+    font-size: 40px;
+    line-height: 52.92px;
+    margin: 96px 0px 47px 0px;
+}
 
-.stories-container {}
+.stories-container {
+    background-image: url(/travel/images/stories.jpg);
+    height: 1331px;
+    margin-bottom: -60px;
+    position: relative;
+    z-index: 0;
+    padding: 40px 120px;
+}
 
-.stories-block {}
+.stories-container::after{
+    content: '';
+    background-color: rgba(255, 255, 255, 0.7);
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1270px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 
-.stories-img {}
+.stories-heading {
+    position: relative;
+    z-index: 3;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    color: rgba(13, 96, 111, 1);
+}
 
-.stories-description {}
+.stories-block {
+    display: flex;
+    margin-bottom: 30px;
+}
 
-.stories-text {}
+.stories-img {
+    position: relative;
+    width:400px;
+    height:250px;
+    z-index: 3;
 
-.stories-btn {}
+}
+
+.stories-description {
+    margin-left: 40px;
+    
+}
+
+
+
+.stories-text {
+    margin-top: 24px;
+    position: relative;
+    z-index: 3;
+    max-width: 760px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(13, 96, 111, 1);
+}
+
+.btn-stories-box{
+    display: flex;
+    justify-content: center;
+}
+
+.stories-btn {
+    margin-bottom: 41px;
+    width: 228px;
+    height: 59px;
+    align-self: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31.75px;
+    position: relative;
+    z-index: 3;
+}
+
+.stories-btn::before{
+    content: '';
+    background-image: url(/travel/images/icons/Vector.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 37px;
+    height: 22.5px;
+    display: inline-block;
+    right: 10px;
+    top: 3px;
+}
 
 /* Footer */
 
-.footer {}
+.footer {
+    width: 1440px;
+    height: 60px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: right;
+}
 
-.footer-copyrights {}
+.footer-copyrights {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21.17px;
+    color: rgba(255, 255, 255, 1);
+}
 
 /* Footer list */
 
-.footer-list {}
+.footer-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.footer-item {}
+.footer-list {
+    display: flex;
+    padding-left: 330px;
+    margin-right: 124px;
+}
 
-.footer-link {}
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 24px;
+}
+
+.footer-link {
+}
+
+#instagram-icon{
+  height: 27px;
+  width: 27px;
+}
+#youtube-icon {
+  height: 26.4px;
+  width: 33px;
+}
+
+#twitter-icon {
+  width:31.8px;
+  height: 25.9px;
+}
