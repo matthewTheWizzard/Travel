@@ -14,7 +14,7 @@ a:focus,a:active{outline: none;}
 nav,footer,header,aside{display: block;}
 html,body{
 	height: 100%;
-	width: 100%;
+	max-width: 1440px;
 	font-size: 100%;
 	line-height: 1;
 	font-size: 14px;
@@ -45,6 +45,9 @@ body{
 
 .btn {
     padding: 10px 30px;
+    font-weight: 500;
+    background-color: #0D606F;
+    border-radius: 10px;
 }
 
 /* Header */
@@ -103,10 +106,6 @@ body{
 .header-btn {
     font-size: 16px;
     line-height: 21.17px;
-    font-weight: 500;
-    padding: 10px 30px;
-    background-color: #0D606F;
-    border-radius: 10px;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -116,48 +115,128 @@ body{
 
 .section-preview {
     z-index: 1;
-    padding-top: 250px;
-    margin : 0px;
+    margin : -90px 0px 80px;
     position: relative;
-    top: -90px;
     height: 765px;
     width: 1440px;
     background-image: url('/travel/images/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg');
+    background-repeat: no-repeat;
+}
+.preview-container{
+    padding-top: 122px;
+    padding-left: 120px;
+    max-width: 892px;
+}
+.preview-heading {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 96px;
+    color: rgba(255, 255, 255, 1);
 }
 
-.preview-heading {}
+.preview-paragraph {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: italic;
+    color: rgba(255, 255, 255, 1);
+}
 
-.preview-paragraph {}
+.preview-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 892px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    height: 95px;
+}
 
-.preview-form-container {}
+.preview-form {
+    display: flex;
+    justify-content: space-between;
+}
 
-.preview-form {}
+.preview-input {
+    align-self: center;
+    height: 22px;
+    width: 560px;
+    background-color: transparent;
+    margin: 32px 0px 41px 41px;
+    padding-left: 41px;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: rgba(242, 120, 92, 1);
+    
+}
+.preview-input::placeholder{
+    color:rgba(242, 120, 92, 1);
+}
 
-.preview-input {}
-
-.preview-btn {}
+.preview-btn {
+    padding: 13.5px 32.5px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    margin: 18px;
+    width: 282px;
+   
+}
 
 /* Steps */
 
 .section-steps {}
 
-.steps-heading {}
+.steps-heading {
+    position: relative;
+    text-align: center;
+    color: rgba(242, 120, 92, 1);
+    font-size: 40px;
+    line-height: 52.92px;
+    margin: 80px 0px 40px 0px;
+}
 
-.steps-container {}
+.steps-container {
+    display: flex;
+    justify-content: space-evenly;
+}
 
-.steps-block {}
+.steps-block {
+    display: flex;
+    flex-direction: column;
+}
 
-.steps-icon {}
+.steps-icon {
+    width: 100px;
+    height: 100px;
+}
 
-.steps-icon-link {}
+.steps-icon-link {
+    align-self: center;
+}
 
-.steps-text {}
+.steps-text {
+   margin: 30px 0px 0px 0px;
+   font-size: 20px;
+   line-height: 24px;
+   font-weight: 400;
+   color: rgba(13, 96, 111, 1); 
+}
 
 /* Destination */
 
 .section-destinations {}
 
-.destination-heading {}
+.destination-heading {
+    position: relative;
+    text-align: center;
+    color: rgba(242, 120, 92, 1);
+    font-size: 40px;
+    line-height: 52.92px;
+    margin: 96px 0px 47px 0px;
+}
 
 .destinations-box {}
 
