@@ -36,14 +36,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 /* basic styles */
 html{
-
+    scroll-behavior: smooth;
 }
 
 body{
+    
   
 }
 
 .btn {
+    font-family: 'Red Hat Text';
     padding: 10px 30px;
     font-weight: 500;
     background-color: #0D606F;
@@ -65,6 +67,7 @@ body{
 }
 
 .header-title {
+    font-family: 'Magra';
     align-self: center;
     padding: 34px 156px;
     font-size: 32px;
@@ -74,6 +77,17 @@ body{
     
 }
 
+.header-title::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    margin-right: 6px;
+    background-image: url('/travel/images/icons/header.svg');
+}
+
 /* Navigation */
 
 .header-nav {
@@ -81,6 +95,7 @@ body{
     align-items: center;
     
 }
+
 
 .header-list {
     display: flex;
@@ -92,6 +107,7 @@ body{
 }
 
 .header-link {
+    font-family: 'Red Hat Text';
     font-size: 16px;
     font-weight: 500px;
     line-height: 21.17px;
@@ -105,6 +121,7 @@ body{
 }
 
 .header-btn {
+    font-family: 'Red Hat Text';
     font-size: 16px;
     line-height: 21.17px;
 }
@@ -128,6 +145,7 @@ body{
     max-width: 892px;
 }
 .preview-heading {
+    font-family: 'Aleo';
     font-size: 80px;
     font-weight: 700;
     line-height: 96px;
@@ -135,18 +153,21 @@ body{
 }
 
 .preview-paragraph {
+    margin-top: 30px;
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    font-weight: 700;
-    font-style: italic;
     color: rgba(255, 255, 255, 1);
 }
 
 .preview-form-container {
+    margin-top: 46px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 892px;
+    width: 892px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 16px;
     height: 95px;
@@ -158,13 +179,12 @@ body{
 }
 
 .preview-input {
-    align-self: center;
     height: 22px;
     width: 560px;
     background-color: transparent;
     margin: 32px 0px 41px 41px;
-    
-    font-weight: 400;
+    font-family: 'Aleo','serif';
+    font-weight: 300;
     font-style: italic;
     font-size: 24px;
     line-height: 28.8px;
@@ -172,13 +192,19 @@ body{
     
 }
 .preview-input::placeholder{
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    font-family: 'Aleo', 'serif';
     color:rgba(242, 120, 92, 1);
 }
 
 .preview-btn {
     padding: 13.5px 32.5px;
     font-size: 24px;
-    
+    font-family: 'Red Hat Text';
     font-weight: 500;
     margin: 18px;
     width: 282px;
@@ -190,6 +216,7 @@ body{
 .section-steps {}
 
 .steps-heading {
+    font-family: 'Red Hat Text';
     width: 1440px;
     position: relative;
     text-align: center;
@@ -219,6 +246,7 @@ body{
 }
 
 .steps-text {
+   font-family: 'Aleo';
    margin: 30px 0px 0px 0px;
    font-size: 20px;
    line-height: 24px;
@@ -236,6 +264,7 @@ body{
 }
 
 .destination-heading {
+    font-family: 'Red Hat Text';
     position: relative;
     text-align: center;
     color: rgba(242, 120, 92, 1);
@@ -299,6 +328,7 @@ body{
 }
 
 .stories-section-heading {
+    font-family: 'Red Hat Text';
     position: relative;
     text-align: center;
     color: rgba(242, 120, 92, 1);
@@ -329,6 +359,7 @@ body{
 }
 
 .stories-heading {
+    font-family: 'Aleo';
     position: relative;
     z-index: 3;
     font-weight: 400;
@@ -358,6 +389,7 @@ body{
 
 
 .stories-text {
+    font-family: 'Aleo';
     margin-top: 24px;
     position: relative;
     z-index: 3;
@@ -409,6 +441,7 @@ body{
 }
 
 .footer-copyrights {
+    font-family: 'Red Hat Text';
     font-weight: 500;
     font-size: 15px;
     line-height: 21.17px;
@@ -452,3 +485,4 @@ body{
   width:31.8px;
   height: 25.9px;
 }
+
