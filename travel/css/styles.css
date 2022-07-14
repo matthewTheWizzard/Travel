@@ -64,12 +64,14 @@ body{
     width: 1440px;
     justify-content: space-between;
     background-color: rgba(242, 120, 92, 0.7);
+    box-shadow: 0 4px 4px rgba(13, 96, 111, 0.5);
 }
 
 .header-title {
+    margin-left: 86px;
     font-family: 'Magra';
     align-self: center;
-    padding: 34px 156px;
+    padding: 34px;
     font-size: 32px;
     font-weight: 600;
     line-height: 38.88px;
@@ -98,6 +100,7 @@ body{
 
 
 .header-list {
+    margin-right: 25px;
     display: flex;
     
 }
@@ -124,6 +127,8 @@ body{
     font-family: 'Red Hat Text';
     font-size: 16px;
     line-height: 21.17px;
+    box-shadow: 0 2px 3px rgba(13, 96, 111, 1);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Main */
@@ -142,7 +147,7 @@ body{
 .preview-container{
     padding-top: 122px;
     padding-left: 120px;
-    max-width: 892px;
+    max-width: 920px;
 }
 .preview-heading {
     font-family: 'Aleo';
@@ -153,7 +158,7 @@ body{
 }
 
 .preview-paragraph {
-    margin-top: 30px;
+    margin-top: 32px;
     font-family: 'Aleo';
     font-style: italic;
     font-weight: 700;
@@ -182,7 +187,8 @@ body{
     height: 22px;
     width: 560px;
     background-color: transparent;
-    margin: 32px 0px 41px 41px;
+    margin-top: 36px;
+    margin-left: 41px;
     font-family: 'Aleo','serif';
     font-weight: 300;
     font-style: italic;
@@ -207,13 +213,16 @@ body{
     font-family: 'Red Hat Text';
     font-weight: 500;
     margin: 18px;
-    width: 282px;
+    width: 228px;
+    line-height: 32px;
    
 }
 
 /* Steps */
 
-.section-steps {}
+.section-steps {
+    width: 1440px;
+}
 
 .steps-heading {
     font-family: 'Red Hat Text';
@@ -228,12 +237,29 @@ body{
 
 .steps-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    
+    /* margin-right: 96px; */
+    /* margin-left: 130px; */
 }
 
 .steps-block {
     display: flex;
     flex-direction: column;
+    width: 330px;
+    height: 160px;
+    
+    
+    
+}
+
+.steps-block:nth-child(3){
+    position: relative;
+    right: 50px;
+}
+.steps-block:nth-child(1) {
+    position:relative;
+    left: 14px;
 }
 
 .steps-icon {
@@ -252,6 +278,8 @@ body{
    line-height: 24px;
    font-weight: 400;
    color: rgba(13, 96, 111, 1); 
+   text-align: center;
+   
 }
 
 /* Destination */
@@ -270,7 +298,7 @@ body{
     color: rgba(242, 120, 92, 1);
     font-size: 40px;
     line-height: 52.92px;
-    margin: 96px 0px 47px 0px;
+    margin: 91px 0px 47px 0px;
 }
 
 .destinations-box {
@@ -299,6 +327,7 @@ body{
 }
 
 .destination-btn {
+    
     margin-top: 40px;
     width: 228px;
     height: 59px;
@@ -315,7 +344,7 @@ body{
     width: 37px;
     height: 22.5px;
     display: inline-block;
-    right: 10px;
+    right: 4px;
     top: 3px;
     
 
@@ -334,7 +363,7 @@ body{
     color: rgba(242, 120, 92, 1);
     font-size: 40px;
     line-height: 52.92px;
-    margin: 96px 0px 47px 0px;
+    margin: 80px 0px 40px 0px;
 }
 
 .stories-container {
@@ -378,6 +407,8 @@ body{
     width:400px;
     height:250px;
     z-index: 3;
+    filter: drop-shadow(0px 4px 4px #0D606F);
+    border-radius: 16px;
 
 }
 
@@ -406,7 +437,7 @@ body{
 }
 
 .stories-btn {
-    margin-bottom: 41px;
+    margin-top: 10px;
     width: 228px;
     height: 59px;
     align-self: center;
@@ -440,15 +471,20 @@ body{
     justify-content: right;
 }
 
+/* Footer list */
+
 .footer-copyrights {
-    font-family: 'Red Hat Text';
+font-family: 'Red Hat Text';
+    font-style: normal;
     font-weight: 500;
-    font-size: 15px;
-    line-height: 21.17px;
+    font-size: 16px;
+    line-height: 21px;
     color: rgba(255, 255, 255, 1);
+    position: relative;
+  
 }
 
-/* Footer list */
+
 
 .footer-box{
     display: flex;
@@ -466,23 +502,27 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 24px;
+    padding-right: 14px;
 }
 
 .footer-link {
 }
 
 #instagram-icon{
-  height: 27px;
-  width: 27px;
+  height: 31px;
+  width: 31px;
 }
 #youtube-icon {
-  height: 26.4px;
+  height: 29px;
   width: 33px;
+  position: relative;
+  left: 9px; 
 }
 
 #twitter-icon {
-  width:31.8px;
-  height: 25.9px;
+  width:32px;
+  height: 28px;
+  position: relative;
+  left: 17px;
 }
 
